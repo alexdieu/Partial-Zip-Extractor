@@ -3,7 +3,7 @@
   "name": "Partial ZIP Extractor",
   "version": "0.1.6",
   "description": "Intercept ZIP downloads and allow selective file extraction using partial HTTP requests.",
-  "author": "You",
+  "author": "Alexandre Divol",
   "permissions": [
     "downloads",
     "activeTab",
