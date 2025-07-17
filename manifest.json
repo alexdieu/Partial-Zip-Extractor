@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Partial ZIP Extractor",
+  "version": "0.1.6",
+  "description": "Intercept ZIP downloads and allow selective file extraction using partial HTTP requests.",
+  "author": "You",
+  "permissions": [
+    "downloads",
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["unzipit.min.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}

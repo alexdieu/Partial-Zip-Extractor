@@ -1,0 +1,47 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bandwidth Stats</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 16px;
+      width: 300px;
+      background: #f7fafc;
+      color: #2d3748;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 1.25em;
+      margin-bottom: 16px;
+      color: #1a202c;
+    }
+
+    p {
+      font-size: 0.875em;
+      margin: 8px 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    span {
+      font-weight: 600;
+      color: #3182ce;
+    }
+  </style>
+</head>
+<body>
+  <h1>Bandwidth Stats</h1>
+  <p>Total Downloaded: <span id="totalDownloaded">0 Bytes</span></p>
+  <p>Total Saved: <span id="totalSaved">0 Bytes</span></p>
+  <p>Last Month Downloaded: <span id="lastMonthDownloaded">0 Bytes</span></p>
+  <p>Last Month Saved: <span id="lastMonthSaved">0 Bytes</span></p>
+  <script src="popup.js"></script>
+</body>
+</html>
